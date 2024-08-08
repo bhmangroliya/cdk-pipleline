@@ -16,6 +16,7 @@ class CdkPipelineStack(cdk.Stack):
                                 "python -m pip install -r requirements.txt",
                                 "cdk synth"]
                         ),
+                        cross_account_keys=True,
                         publish_assets_in_parallel=False
                     )
         
